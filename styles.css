@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+
+html {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+#map {
+/*    position: fixed;*/
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    height: 768px;
+    overflow: hidden;
+    float: left;
+}
+
+#filter-area {
+    background-color: #EFEFF4;
+    z-index: 1;
+    float: right;
+    width: 20%;
+    margin: 0;
+    padding: 1em;
+}
+
+.filter-group {
+    font-size: : 12px/20px;
+    font-family: monospace;
+    right: 120px;
+    border-radius: 3px;
+    width: 120px;
+    color: #000;
+    margin-top: 30px;
+}
+
+.filter-group input[type=checkbox]:first-child + label {
+    border-radius: 3px 3px 0 0;
+    width: 160px;
+}
+
+.filter-group label:last-child {
+    border-radius: 0 0 3px 3px;
+    border: none;
+    width: 160px;
+}
+
+.filter-group input[type=checkbox] {
+    display: none;
+    width: 160px;
+}
+
+.filter-group input[type=checkbox] + label {
+    background-color: #EFEFF4;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    width: 160px;
+}
+
+.filter-group input[type=checkbox] + label {
+    background-color: #EFEFF4;
+    text-transform: capitalize;
+    width: 160px;
+}
+
+.filter-group input[type=checkbox] + label:hover,
+.filter-group input[type=checkbox]:checked + label {
+    background-color: #EFEFF4;
+    width: 160px;
+}
+
+.filter-group input[type=checkbox]:checked + label:before {
+    content: "\2713";
+    margin-right: 5px;
+    width: 160px;
+}
+
+.h1, h1 {
+    font-size: 75px;
+    color: #fff8f0;
+    font-family: monospace;
+}
+
+#txt {
+    font-size: 200px;
+    color: #fff8f0;
+    font-family: monospace;
+}
+
+.btn-custom {
+    background-color: orange;
+    border-color: orange;
+    color: #fff8f0;
+    font-size: 30px;
+    width: 300px;
+    font-family: monospace;
+    margin-top: 30px;
+}
+
+.btn-custom:hover {
+    background-color: #e58c00;
+    border-color: #e58c00;
+}
+
+/* DEMO-SPECIFIC STYLES */
+
+.typewriter {
+    margin-top: 300px;
+}
+
+.typewriter h2 {
+    color: #fff;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    font-size: 40px;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    font-family: monospace;
+    color: #000;
+    font-size: 28px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.button-div {
+    margin-top: 100px;
+}
+
+.typewriter-filter h3 {
+    color: #000;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    font-size: 22px;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px;
+    font-family: monospace;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+p {
+    font-family: monospace;
+    font-size: 12px/20px;
+}
+
+p .legend {
+    color: #fff;
+}
+
+span {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.legend {
+    margin-top: 10px;
+}
+
+#cafe-deli {
+  background-color: #FF9500;
+}
+
+#quick-serve {
+  background-color: #4CD964;
+}
+
+#full-serve {
+  background-color: #FF3B30;
+}
+
+#coffee {
+  background-color: #A76912;
+}
+
+#bar-lounge {
+  background-color: #6644CC;
+}
+
+#catering {
+  background-color: #C8C7CC;
+}
+
+#consumables {
+  background-color: #007AFF;
+}
